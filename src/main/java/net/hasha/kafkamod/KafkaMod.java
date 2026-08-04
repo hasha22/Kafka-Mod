@@ -2,6 +2,9 @@ package net.hasha.kafkamod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.hasha.kafkamod.block.ModBlocks;
+import net.hasha.kafkamod.items.ModItemGroups;
+import net.hasha.kafkamod.items.ModItems;
 import net.minecraft.util.Identifier;
 
 import org.slf4j.Logger;
@@ -13,7 +16,10 @@ public class KafkaMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("Hello Fabric world!");
+        ModItemGroups.registerItemGroups();
+        ModItems.registerModItems();
+
+        ModBlocks.registerModBlocks();
 	}
 	public static Identifier id(String path) {
 		return new Identifier(MOD_ID, path);

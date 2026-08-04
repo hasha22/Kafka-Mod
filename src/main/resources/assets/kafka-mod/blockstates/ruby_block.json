@@ -1,0 +1,9 @@
+{
+  "variants":
+  {
+    "":
+    {
+      "model": "kafka-mod:block/ruby_block"
+    }
+  }
+}
