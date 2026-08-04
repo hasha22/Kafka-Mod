@@ -11,13 +11,16 @@
 		"homepage": "https://modrinth.com/user/hasha22",
 		"sources": "https://github.com/hasha22"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/kafka-mod/kafka.jpg",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
 			"net.hasha.kafkamod.KafkaMod"
 		],
+        "client": [
+          "net.hasha.kafkamod.KafkaModClient"
+        ],
 		"fabric-datagen": [
 			"net.hasha.kafkamod.KafkaModDataGenerator"
 		]
