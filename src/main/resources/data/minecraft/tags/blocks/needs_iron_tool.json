@@ -1,0 +1,6 @@
+{
+  "replace": false,
+  "values": [
+    "kafka-mod:ruby_block"
+  ]
+}

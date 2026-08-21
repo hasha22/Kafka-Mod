@@ -3,8 +3,14 @@
 	"package": "net.hasha.kafkamod.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"ExampleMixin"
+      "HotbarOnlySlotMixin",
+      "HotbarOnlySweepMixin",
+      "HotbarOnlyPickupMixin",
+      "HotbarOnlyInsertItemMixin"
 	],
+    "client": [
+      "HotbarOnlyScreenMixin"
+    ],
 	"injectors": {
 		"defaultRequire": 1
 	},
