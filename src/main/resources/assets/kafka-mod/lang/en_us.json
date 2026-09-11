@@ -1,6 +1,8 @@
 {
-  "item.kafka-mod.ruby": "Ruby",
   "itemgroup.kafka": "Kafka",
 
-  "block.kafka-mod.ruby_block": "Ruby Block"
+  "block.kafka-mod.kafka_half_wall": "Half Wall Lamp",
+  "block.kafka-mod.kafka_street_lamp": "Street Lamp",
+  "block.kafka-mod.kafka_lampost": "Lampost",
+  "item.kafka-mod.kafka_icon": "Kafka"
 }

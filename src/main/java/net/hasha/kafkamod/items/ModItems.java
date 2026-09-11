@@ -12,11 +12,11 @@ import net.minecraft.util.Identifier;
 
 public class ModItems
 {
-    public static final Item RUBY = registerItem("ruby", new Item(new FabricItemSettings()));
+    public static final Item KAFKA_ICON = registerItem("kafka_icon", new Item(new FabricItemSettings()));
 
     private static void addItemsToIngredientTabItemGroup(FabricItemGroupEntries entries)
     {
-        entries.add(RUBY);
+
     }
     private static Item registerItem(String name, Item item)
     {

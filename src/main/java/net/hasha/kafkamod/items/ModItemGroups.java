@@ -13,11 +13,13 @@ import net.minecraft.text.Text;
 public class ModItemGroups
 {
     public static final ItemGroup KAFKA_GROUP = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(KafkaMod.MOD_ID, "ruby"),
+            new Identifier(KafkaMod.MOD_ID, "kafka"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.kafka"))
-                    .icon(() -> new ItemStack(ModItems.RUBY)).entries((displayContext, entries) -> {
-                        entries.add(ModItems.RUBY);
-                        entries.add(ModBlocks.RUBY_BLOCK);
+                    .icon(() -> new ItemStack(ModItems.KAFKA_ICON)).entries((displayContext, entries) -> {
+                        entries.add(ModItems.KAFKA_ICON);
+                        entries.add(ModBlocks.KAFKA_HALF_WALL);
+                        entries.add(ModBlocks.KAFKA_STREET_LAMP);
+                        entries.add(ModBlocks.KAFKA_LAMPOST);
 
                     }).build());
     public static void registerItemGroups()
