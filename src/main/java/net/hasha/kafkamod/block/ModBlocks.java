@@ -30,7 +30,6 @@ public class ModBlocks
                     .mapColor(MapColor.STONE_GRAY)
                     .strength(2.0f)
                     .requiresTool()
-                    .luminance(state -> 14)
                     .nonOpaque()));
 
     public static final Block KAFKA_LAMPOST = registerBlock("kafka_lampost",
@@ -38,7 +37,6 @@ public class ModBlocks
                     .mapColor(MapColor.STONE_GRAY)
                     .strength(2.0f)
                     .requiresTool()
-                    .luminance(state -> 14)
                     .nonOpaque()));
     private static Block registerBlock(String name, Block block)
     {
