@@ -1,4 +1,4 @@
-package net.hasha.kafkamod;
+package net.hasha.kafkamod.yuusha;
 
 import net.fabricmc.fabric.api.event.player.UseBlockCallback;
 import net.minecraft.block.BlockState;
@@ -10,7 +10,6 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Box;
 
-import javax.swing.*;
 import java.util.List;
 import java.util.Set;
 

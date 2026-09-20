@@ -9,13 +9,15 @@ import net.hasha.kafkamod.config.ConfigManager;
 import net.hasha.kafkamod.config.KafkaModConfig;
 import net.hasha.kafkamod.items.ModItemGroups;
 import net.hasha.kafkamod.items.ModItems;
+import net.hasha.kafkamod.vehicles.ModEntities;
+import net.hasha.kafkamod.vehicles.networking.VehicleNetworking;
+import net.hasha.kafkamod.yuusha.WindowNPCInteraction;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.util.Identifier;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.awt.*;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
@@ -41,6 +43,12 @@ public class KafkaMod implements ModInitializer {
 
         //Event Registration
         WindowNPCInteraction.register();
+
+        //Entity Registration
+        ModEntities.register();
+
+        //Vehicle Networking registration
+        VehicleNetworking.registerServer();
 
         //Increasing hunger drain for all players not in creative mode while sprinting
         ServerTickEvents.END_SERVER_TICK.register(server -> {
