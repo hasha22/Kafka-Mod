@@ -1,0 +1,27 @@
+package net.hasha.kafkamod.block;
+
+import net.minecraft.block.AbstractBlock;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.ShapeContext;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.shape.VoxelShape;
+import net.minecraft.util.shape.VoxelShapes;
+import net.minecraft.world.BlockView;
+
+public class StreetLampBlock extends Block
+{
+    private static final VoxelShape SHAPE = VoxelShapes.union(
+            VoxelShapes.cuboid(0.0, 0.0, 0.0, 1.0, 0.5, 1.0),
+            VoxelShapes.cuboid(0.25, 0.5, 0.25, 0.75, 1.0, 0.75)
+    );
+
+    public StreetLampBlock(AbstractBlock.Settings settings) {
+        super(settings);
+    }
+
+    @Override
+    public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
+        return SHAPE;
+    }
+}

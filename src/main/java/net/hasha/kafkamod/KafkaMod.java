@@ -15,6 +15,7 @@ import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.awt.*;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
@@ -37,6 +38,9 @@ public class KafkaMod implements ModInitializer {
         ModItemGroups.registerItemGroups();
         ModItems.registerModItems();
         ModBlocks.registerModBlocks();
+
+        //Event Registration
+        WindowNPCInteraction.register();
 
         //Increasing hunger drain for all players not in creative mode while sprinting
         ServerTickEvents.END_SERVER_TICK.register(server -> {

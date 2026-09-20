@@ -19,21 +19,21 @@ import net.minecraft.util.Identifier;
 public class ModBlocks
 {
     public static final Block KAFKA_HALF_WALL = registerBlock("kafka_half_wall",
-            new Block(FabricBlockSettings.create()
+            new HalfWallBlock(FabricBlockSettings.create()
                     .mapColor(MapColor.STONE_GRAY)
                     .strength(2.0f)
                     .requiresTool()
                     .nonOpaque()));
 
     public static final Block KAFKA_STREET_LAMP = registerBlock("kafka_street_lamp",
-            new Block(FabricBlockSettings.create()
+            new StreetLampBlock(FabricBlockSettings.create()
                     .mapColor(MapColor.STONE_GRAY)
                     .strength(2.0f)
                     .requiresTool()
                     .nonOpaque()));
 
     public static final Block KAFKA_LAMPOST = registerBlock("kafka_lampost",
-            new Block(FabricBlockSettings.create()
+            new LampPostBlock(FabricBlockSettings.create()
                     .mapColor(MapColor.STONE_GRAY)
                     .strength(2.0f)
                     .requiresTool()
